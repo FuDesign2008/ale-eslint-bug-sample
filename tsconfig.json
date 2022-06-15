@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "traceResolution": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noFallthroughCasesInSwitch": true,
+    "importHelpers": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "useUnknownInCatchVariables": false,
+    "useDefineForClassFields": false,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "lib": ["DOM", "es5", "es2015", "es2016", "es2017", "es2019"],
+    "paths": {
+      "src/*": ["src/*"],
+      "@/*": ["src/*"],
+      "lodash/*": ["node_modules/@types/lodash-es/*"]
+    },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": [
+    "*.ts",
+    "tool/**/*.ts",
+    "src/**/*.ts",
+    "build/**/*.ts",
+    "config/**/*.ts",
+    "src/**/*.vue",
+    "src/**/*.tsx",
+    "test/**/*.ts"
+  ],
+  "exclude": ["node_modules", "node_modules/.pnpm"],
+  "compileOnSave": false,
+  "buildOnSave": false
+}

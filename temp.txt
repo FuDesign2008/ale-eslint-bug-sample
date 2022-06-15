@@ -1,0 +1,137 @@
+ Current Filetype: typescriptreact
+Available Linters: ['cspell', 'deno', 'eslint', 'standard', 'tslint', 'tsserver', 'typecheck', 'xo']
+  Enabled Linters: ['eslint', 'tsserver']
+  Ignored Linters: []
+ Suggested Fixers: 
+  'remove_trailing_lines' - Remove all blank lines at the end of a file.
+  'trim_whitespace' - Remove all trailing whitespace characters at the end of every line.
+ Linter Variables:
+
+ Global Variables:
+
+let g:ale_cache_executable_check_failures = 1
+let g:ale_change_sign_column_color = 0
+let g:ale_command_wrapper = ''
+let g:ale_completion_delay = v:null
+let g:ale_completion_enabled = 0
+let g:ale_completion_max_suggestions = 5
+let g:ale_disable_lsp = 0
+let g:ale_echo_cursor = 1
+let g:ale_echo_msg_error_str = 'Error'
+let g:ale_echo_msg_format = '%code: %%s'
+let g:ale_echo_msg_info_str = 'Info'
+let g:ale_echo_msg_warning_str = 'Warning'
+let g:ale_enabled = 1
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {'yaml': ['yamlfix', 'prettier'], 'c': ['clang-format'], 'typescript': ['prettier'], 'markdown': ['prettier'], 'scss': ['prettier'], 'typescriptreact': ['prettier'], 'json': ['prettier', 'fixjson'], 'javascript': ['prettier'], 'html': ['prettier'], 'less': ['prettier'], 'css': ['prettier'], 'vue': ['prettier', 'stylelint']}
+let g:ale_history_enabled = 1
+let g:ale_history_log_output = 1
+let g:ale_keep_list_window_open = 0
+let g:ale_lint_delay = 200
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_filetype_changed = 1
+let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_on_save = 0
+let g:ale_lint_on_text_changed = 1
+let g:ale_linter_aliases = {'vue': ['vue', 'html', 'javascript', 'typescript', 'css', 'scss']}
+let g:ale_linters = {'shell': ['shellcheck', 'language_server'], 'c': [], 'typescript': ['tsserver', 'eslint'], 'markdown': ['remark-lint', 'markdownlint'], 'vue': ['stylelint', 'vls', 'eslint'], 'typescriptreact': ['tsserver', 'eslint'], 'json': ['jsonlint'], 'dockerfile': ['hadolint'], 'yaml': ['yamllint', 'prettier'], 'java': ['javac', 'checkstyle'], 'javascript': ['eslint'], 'cpp': [], 'tex': []}
+let g:ale_linters_explicit = 0
+let g:ale_linters_ignore = {}
+let g:ale_list_vertical = 0
+let g:ale_list_window_size = 3
+let g:ale_loclist_msg_format = '%code: %%s'
+let g:ale_max_buffer_history_size = 20
+let g:ale_max_signs = 5
+let g:ale_maximum_file_size = 1048576
+let g:ale_open_list = 0
+let g:ale_pattern_options = {'\.min\.css$': {'ale_enabled': 0}, 'dist\/': {'ale_enabled': 0}, '\.min\.js$': {'ale_enabled': 0}}
+let g:ale_pattern_options_enabled = v:null
+let g:ale_root = {}
+let g:ale_set_balloons = 1
+let g:ale_set_highlights = 1
+let g:ale_set_loclist = 1
+let g:ale_set_quickfix = 0
+let g:ale_set_signs = 1
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = '✗'
+let g:ale_sign_info = '!'
+let g:ale_sign_offset = 1000000
+let g:ale_sign_style_error = '✗'
+let g:ale_sign_style_warning = '!'
+let g:ale_sign_warning = '!'
+let g:ale_sign_highlight_linenrs = 0
+let g:ale_statusline_format = v:null
+let g:ale_type_map = {}
+let g:ale_use_global_executables = v:null
+let g:ale_virtualtext_cursor = 0
+let g:ale_warn_about_trailing_blank_lines = 1
+let g:ale_warn_about_trailing_whitespace = 1
+  Command History:
+
+(executable check - success) /Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js
+(finished - exit code 0) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/5/test.tsx''']
+
+<<<OUTPUT STARTS>>>
+[{"filePath":"/Users/fuyg/workspace/gitlab/sample/src/test.tsx","messages":[{"ruleId":"no-console","severity":1,"message":"Unexpected console statement.","line":4,"column":3,"nodeType":"MemberExpression","messageId":"unexpected","endLine":4,"endColumn":14}],"suppressedMessages":[],"errorCount":0,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":"\nfunction hello() {\n  // TODO\n  console.log('hello world')\n  document.addEventListener('click', () => {\n    // TODO\n  })\n}\n\nhello()\n","usedDeprecatedRules":[{"ruleId":"lines-around-directive","replacedBy":["padding-line-between-statements"]},{"ruleId":"no-spaced-func","replacedBy":["func-call-spacing"]},{"ruleId":"global-require","replacedBy":[]},{"ruleId":"no-buffer-constructor","replacedBy":[]},{"ruleId":"no-new-require","replacedBy":[]},{"ruleId":"no-path-concat","replacedBy":[]}]}]
+<<<OUTPUT ENDS>>>
+
+(executable check - success) /Users/fuyg/workspace/gitlab/sample/node_modules/.bin/tsserver
+(started) ['/bin/bash', '-c', '''/Users/fuyg/workspace/gitlab/sample/node_modules/.bin/tsserver''']
+(started) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/6/test.tsx''']
+(started) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/7/test.tsx''']
+(finished - exit code 0) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/8/test.tsx''']
+
+<<<OUTPUT STARTS>>>
+[{"filePath":"/Users/fuyg/workspace/gitlab/sample/src/test.tsx","messages":[{"ruleId":"no-console","severity":1,"message":"Unexpected console statement.","line":5,"column":3,"nodeType":"MemberExpression","messageId":"unexpected","endLine":5,"endColumn":14}],"suppressedMessages":[],"errorCount":0,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":"\nfunction hello() {\n  // TODO\n\n  console.log('hello world')\n  document.addEventListener('click', () => {\n    // TODO\n  })\n}\n\nhello()\n","usedDeprecatedRules":[{"ruleId":"lines-around-directive","replacedBy":["padding-line-between-statements"]},{"ruleId":"no-spaced-func","replacedBy":["func-call-spacing"]},{"ruleId":"global-require","replacedBy":[]},{"ruleId":"no-buffer-constructor","replacedBy":[]},{"ruleId":"no-new-require","replacedBy":[]},{"ruleId":"no-path-concat","replacedBy":[]}]}]
+<<<OUTPUT ENDS>>>
+
+(finished - exit code 0) ['/bin/bash', '-c', '''prettier'' --version']
+
+<<<OUTPUT STARTS>>>
+1.19.1
+<<<OUTPUT ENDS>>>
+
+(finished - exit code 0) ['/bin/bash', '-c', 'cd ''/Users/fuyg'' && ''prettier'' --stdin-filepath ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' --stdin < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/9/test.tsx''']
+(finished - exit code 1) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/10/test.tsx''']
+
+<<<OUTPUT STARTS>>>
+[{"filePath":"/Users/fuyg/workspace/gitlab/sample/src/test.tsx","messages":[{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":2,"column":1,"nodeType":"Line","messageId":"wrongIndentation","endLine":2,"endColumn":5,"fix":{"range":[19,23],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":4,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":4,"endColumn":5,"fix":{"range":[32,36],"text":"  "}},{"ruleId":"no-console","severity":1,"message":"Unexpected console statement.","line":4,"column":5,"nodeType":"MemberExpression","messageId":"unexpected","endLine":4,"endColumn":16},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":5,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":5,"endColumn":5,"fix":{"range":[63,67],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 4 spaces but found 8.","line":6,"column":1,"nodeType":"Line","messageId":"wrongIndentation","endLine":6,"endColumn":9,"fix":{"range":[110,118],"text":"    "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":7,"column":1,"nodeType":"Punctuator","messageId":"wrongIndentation","endLine":7,"endColumn":5,"fix":{"range":[126,130],"text":"  "}}],"suppressedMessages":[],"errorCount":5,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":5,"fixableWarningCount":0,"source":"function hello() {\n    // TODO\n\n    console.log('hello world')\n    document.addEventListener('click', () => {\n        // TODO\n    })\n}\n\nhello()\n","usedDeprecatedRules":[{"ruleId":"lines-around-directive","replacedBy":["padding-line-between-statements"]},{"ruleId":"no-spaced-func","replacedBy":["func-call-spacing"]},{"ruleId":"global-require","replacedBy":[]},{"ruleId":"no-buffer-constructor","replacedBy":[]},{"ruleId":"no-new-require","replacedBy":[]},{"ruleId":"no-path-concat","replacedBy":[]}]}]
+<<<OUTPUT ENDS>>>
+
+(finished - exit code 1) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/11/test.tsx''']
+
+<<<OUTPUT STARTS>>>
+[{"filePath":"/Users/fuyg/workspace/gitlab/sample/src/test.tsx","messages":[{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":2,"column":1,"nodeType":"Line","messageId":"wrongIndentation","endLine":2,"endColumn":5,"fix":{"range":[19,23],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":3,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":3,"endColumn":5,"fix":{"range":[31,35],"text":"  "}},{"ruleId":"no-console","severity":1,"message":"Unexpected console statement.","line":3,"column":5,"nodeType":"MemberExpression","messageId":"unexpected","endLine":3,"endColumn":16},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":4,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":4,"endColumn":5,"fix":{"range":[62,66],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 4 spaces but found 8.","line":5,"column":1,"nodeType":"Line","messageId":"wrongIndentation","endLine":5,"endColumn":9,"fix":{"range":[109,117],"text":"    "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":6,"column":1,"nodeType":"Punctuator","messageId":"wrongIndentation","endLine":6,"endColumn":5,"fix":{"range":[125,129],"text":"  "}}],"suppressedMessages":[],"errorCount":5,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":5,"fixableWarningCount":0,"source":"function hello() {\n    // TODO\n    console.log('hello world')\n    document.addEventListener('click', () => {\n        // TODO\n    })\n}\n\nhello()\n","usedDeprecatedRules":[{"ruleId":"lines-around-directive","replacedBy":["padding-line-between-statements"]},{"ruleId":"no-spaced-func","replacedBy":["func-call-spacing"]},{"ruleId":"global-require","replacedBy":[]},{"ruleId":"no-buffer-constructor","replacedBy":[]},{"ruleId":"no-new-require","replacedBy":[]},{"ruleId":"no-path-concat","replacedBy":[]}]}]
+<<<OUTPUT ENDS>>>
+
+(finished - exit code 1) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/12/test.tsx''']
+
+<<<OUTPUT STARTS>>>
+[{"filePath":"/Users/fuyg/workspace/gitlab/sample/src/test.tsx","messages":[{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":2,"column":1,"nodeType":"Line","messageId":"wrongIndentation","endLine":2,"endColumn":5,"fix":{"range":[19,23],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":3,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":3,"endColumn":5,"fix":{"range":[31,35],"text":"  "}},{"ruleId":"no-console","severity":1,"message":"Unexpected console statement.","line":3,"column":5,"nodeType":"MemberExpression","messageId":"unexpected","endLine":3,"endColumn":16},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":4,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":4,"endColumn":5,"fix":{"range":[62,66],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 4 spaces but found 8.","line":5,"column":1,"nodeType":"Line","messageId":"wrongIndentation","endLine":5,"endColumn":9,"fix":{"range":[109,117],"text":"    "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":6,"column":1,"nodeType":"Punctuator","messageId":"wrongIndentation","endLine":6,"endColumn":5,"fix":{"range":[125,129],"text":"  "}}],"suppressedMessages":[],"errorCount":5,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":5,"fixableWarningCount":0,"source":"function hello() {\n    // TODO\n    console.log('hello world')\n    document.addEventListener('click', () => {\n        // TODO\n    })\n}\n\nhello()\n","usedDeprecatedRules":[{"ruleId":"lines-around-directive","replacedBy":["padding-line-between-statements"]},{"ruleId":"no-spaced-func","replacedBy":["func-call-spacing"]},{"ruleId":"global-require","replacedBy":[]},{"ruleId":"no-buffer-constructor","replacedBy":[]},{"ruleId":"no-new-require","replacedBy":[]},{"ruleId":"no-path-concat","replacedBy":[]}]}]
+<<<OUTPUT ENDS>>>
+
+(finished - exit code 1) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/13/test.tsx''']
+
+<<<OUTPUT STARTS>>>
+[{"filePath":"/Users/fuyg/workspace/gitlab/sample/src/test.tsx","messages":[{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 0.","line":3,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":3,"endColumn":1,"fix":{"range":[27,27],"text":"  "}},{"ruleId":"no-console","severity":1,"message":"Unexpected console statement.","line":3,"column":1,"nodeType":"MemberExpression","messageId":"unexpected","endLine":3,"endColumn":12},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 0.","line":4,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":4,"endColumn":1,"fix":{"range":[54,54],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":6,"column":1,"nodeType":"Punctuator","messageId":"wrongIndentation","endLine":6,"endColumn":5,"fix":{"range":[109,113],"text":"  "}}],"suppressedMessages":[],"errorCount":3,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":3,"fixableWarningCount":0,"source":"function hello() {\n// TODO\nconsole.log('hello world')\ndocument.addEventListener('click', () => {\n    // TODO\n    })\n}\n\nhello()\n","usedDeprecatedRules":[{"ruleId":"lines-around-directive","replacedBy":["padding-line-between-statements"]},{"ruleId":"no-spaced-func","replacedBy":["func-call-spacing"]},{"ruleId":"global-require","replacedBy":[]},{"ruleId":"no-buffer-constructor","replacedBy":[]},{"ruleId":"no-new-require","replacedBy":[]},{"ruleId":"no-path-concat","replacedBy":[]}]}]
+<<<OUTPUT ENDS>>>
+
+(finished - exit code 1) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/14/test.tsx''']
+
+<<<OUTPUT STARTS>>>
+[{"filePath":"/Users/fuyg/workspace/gitlab/sample/src/test.tsx","messages":[{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":2,"column":1,"nodeType":"Line","messageId":"wrongIndentation","endLine":2,"endColumn":5,"fix":{"range":[19,23],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":3,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":3,"endColumn":5,"fix":{"range":[31,35],"text":"  "}},{"ruleId":"no-console","severity":1,"message":"Unexpected console statement.","line":3,"column":5,"nodeType":"MemberExpression","messageId":"unexpected","endLine":3,"endColumn":16},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":4,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":4,"endColumn":5,"fix":{"range":[62,66],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 4 spaces but found 8.","line":5,"column":1,"nodeType":"Line","messageId":"wrongIndentation","endLine":5,"endColumn":9,"fix":{"range":[109,117],"text":"    "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":6,"column":1,"nodeType":"Punctuator","messageId":"wrongIndentation","endLine":6,"endColumn":5,"fix":{"range":[125,129],"text":"  "}}],"suppressedMessages":[],"errorCount":5,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":5,"fixableWarningCount":0,"source":"function hello() {\n    // TODO\n    console.log('hello world')\n    document.addEventListener('click', () => {\n        // TODO\n    })\n}\n\nhello()\n","usedDeprecatedRules":[{"ruleId":"lines-around-directive","replacedBy":["padding-line-between-statements"]},{"ruleId":"no-spaced-func","replacedBy":["func-call-spacing"]},{"ruleId":"global-require","replacedBy":[]},{"ruleId":"no-buffer-constructor","replacedBy":[]},{"ruleId":"no-new-require","replacedBy":[]},{"ruleId":"no-path-concat","replacedBy":[]}]}]
+<<<OUTPUT ENDS>>>
+
+(finished - exit code 1) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/15/test.tsx''']
+
+<<<OUTPUT STARTS>>>
+[{"filePath":"/Users/fuyg/workspace/gitlab/sample/src/test.tsx","messages":[{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 0.","line":3,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":3,"endColumn":1,"fix":{"range":[27,27],"text":"  "}},{"ruleId":"no-console","severity":1,"message":"Unexpected console statement.","line":3,"column":1,"nodeType":"MemberExpression","messageId":"unexpected","endLine":3,"endColumn":12},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 0.","line":4,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":4,"endColumn":1,"fix":{"range":[54,54],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 0.","line":6,"column":1,"nodeType":"Punctuator","messageId":"wrongIndentation","endLine":6,"endColumn":1,"fix":{"range":[109,109],"text":"  "}}],"suppressedMessages":[],"errorCount":3,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":3,"fixableWarningCount":0,"source":"function hello() {\n// TODO\nconsole.log('hello world')\ndocument.addEventListener('click', () => {\n    // TODO\n})\n}\n\nhello()\n","usedDeprecatedRules":[{"ruleId":"lines-around-directive","replacedBy":["padding-line-between-statements"]},{"ruleId":"no-spaced-func","replacedBy":["func-call-spacing"]},{"ruleId":"global-require","replacedBy":[]},{"ruleId":"no-buffer-constructor","replacedBy":[]},{"ruleId":"no-new-require","replacedBy":[]},{"ruleId":"no-path-concat","replacedBy":[]}]}]
+<<<OUTPUT ENDS>>>
+
+(finished - exit code 1) ['/bin/bash', '-c', 'cd ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0'' && ''/Users/fuyg/workspace/gitlab/sample/node_modules/.pnpm/eslint@8.17.0/node_modules/eslint/bin/eslint.js'' -f json --stdin --stdin-filename ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/16/test.tsx''']
+
+<<<OUTPUT STARTS>>>
+[{"filePath":"/Users/fuyg/workspace/gitlab/sample/src/test.tsx","messages":[{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":2,"column":1,"nodeType":"Line","messageId":"wrongIndentation","endLine":2,"endColumn":5,"fix":{"range":[19,23],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":3,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":3,"endColumn":5,"fix":{"range":[31,35],"text":"  "}},{"ruleId":"no-console","severity":1,"message":"Unexpected console statement.","line":3,"column":5,"nodeType":"MemberExpression","messageId":"unexpected","endLine":3,"endColumn":16},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":4,"column":1,"nodeType":"Identifier","messageId":"wrongIndentation","endLine":4,"endColumn":5,"fix":{"range":[62,66],"text":"  "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 4 spaces but found 8.","line":5,"column":1,"nodeType":"Line","messageId":"wrongIndentation","endLine":5,"endColumn":9,"fix":{"range":[109,117],"text":"    "}},{"ruleId":"indent","severity":2,"message":"Expected indentation of 2 spaces but found 4.","line":6,"column":1,"nodeType":"Punctuator","messageId":"wrongIndentation","endLine":6,"endColumn":5,"fix":{"range":[125,129],"text":"  "}}],"suppressedMessages":[],"errorCount":5,"fatalErrorCount":0,"warningCount":1,"fixableErrorCount":5,"fixableWarningCount":0,"source":"function hello() {\n    // TODO\n    console.log('hello world')\n    document.addEventListener('click', () => {\n        // TODO\n    })\n}\n\nhello()\n","usedDeprecatedRules":[{"ruleId":"lines-around-directive","replacedBy":["padding-line-between-statements"]},{"ruleId":"no-spaced-func","replacedBy":["func-call-spacing"]},{"ruleId":"global-require","replacedBy":[]},{"ruleId":"no-buffer-constructor","replacedBy":[]},{"ruleId":"no-new-require","replacedBy":[]},{"ruleId":"no-path-concat","replacedBy":[]}]}]
+<<<OUTPUT ENDS>>>
+
+(finished - exit code 0) ['/bin/bash', '-c', 'cd ''/Users/fuyg'' && ''prettier'' --stdin-filepath ''/Users/fuyg/workspace/gitlab/sample/src/test.tsx'' --stdin < ''/var/folders/ty/wqtsjfdn12j8w6yg9nlflgv80000gn/T/v7XCfGj/17/test.tsx''']
