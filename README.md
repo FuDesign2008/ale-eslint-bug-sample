@@ -1,0 +1,1 @@
+# ale-eslint-bug-sample
